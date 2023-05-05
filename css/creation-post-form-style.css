@@ -1,0 +1,99 @@
+.form-creation-post{
+    display: flex;
+    width: 50%;
+    background-attachment: #ccc;
+}
+.form-creation-post form,
+.form-creation-post form .form-group{
+    width: 100%;
+}
+.form-creation-post form .form-group{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.form-creation-post form .form-group label{
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 7px;
+}
+.form-creation-post form .form-group .form-control{
+    background: #fff;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    color: #000;
+    margin-bottom: 10px;
+}
+.form-creation-post form .form-group textarea{
+    min-height: 250px;
+    resize: none;
+}
+.form-creation-post form .form-group button{
+    width: max-content;
+    margin: auto;
+    background: #00BCD4;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    padding: 10px 64px;
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 10px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+.form-creation-post form .form-group button>div{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background: rgb(0 0 0 / 31%);
+    left: 0;
+    top: 0;
+}
+.form-creation-post form .form-group button.show>div{
+    display:flex;
+}
+.form-creation-post form div.response{
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    color: #4CAF50;
+    font-weight: 600;
+}
+.form-creation-post form div.response.message-error{
+    color: #f00;
+}
+/**
+* css loading icone spiner
+*/
+.lds-dual-ring {
+    display: inline-block;
+    width: 13px;
+}
+.lds-dual-ring:after {
+    content: " ";
+    display: block;
+    width: 28px;
+    height: 28px;
+    margin: 0 0 0 -14px;
+    border-radius: 50%;
+    border: 6px solid #fff;
+    border-color: #fff transparent #fff transparent;
+    animation: lds-dual-ring 1.2s linear infinite;
+}
+@keyframes lds-dual-ring {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
